@@ -846,7 +846,7 @@ _header_html = (
         <text x="4" y="148" class="ltfunk" font-size="130" fill="#FFFFFF">T</text>
         <text x="88" y="148" class="ltfunk" font-size="130" fill="#2DD4BF">C</text>
     </svg>
-    <div class="thetachart-title">ThetaCharts</div>
+    <div class="thetachart-title">ThetaChart</div>
 </div>
 
 <div class="thetachart-subtitle">

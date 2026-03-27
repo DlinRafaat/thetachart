@@ -1,6 +1,7 @@
 # ---- Get info on STOCKS ---- (vol. 52 week high/low, dividend, etc..)
 import yfinance as yf
 
+
 def get_stock_info(stock_ticker):
     stock_ticker = stock_ticker.upper()
     stock_ticker = yf.Ticker(stock_ticker)

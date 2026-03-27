@@ -1,4 +1,5 @@
 import yfinance as yf
+import streamlit as st
 import pandas as pd
 from datetime import date, datetime
 from stock_price_lookup import get_price
@@ -7,7 +8,7 @@ from filters import get_nearby_strikes
 pd.set_option('display.max_columns', None)
 
 
-
+@st.cache_data(ttl=60)
 def get_options_data(user_ticker, user_expiration, calls_or_puts, strike_num):
     ticker = yf.Ticker(user_ticker)
     expiration = ticker.options[user_expiration]

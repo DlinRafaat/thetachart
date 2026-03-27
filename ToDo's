@@ -1,0 +1,20 @@
+# TO DO'S
+# calculate option greeks - DONE ✅
+# filter out based on user preference. (ex - user wants to only see strikes with 1000+ volume)
+# filters continued... min volume, min open interest, max bid-ask spread, only calls / only puts,
+only ITM / OTM / ATM, strike range around ATM, min/max IV, expiration filters
+
+# point out where the ITM(ATM) strikes are for both calls and puts
+# Spread calculation, Show the bid-ask spread: (ask-bid)
+# Mid-price calculation: ((bid+ask) / 2)
+# Gamma Exposure (GEX) (shows where market makers are hedging.)
+# Track premium vs stock price - the original idea.
+# Premium strength indicator - expected premiums(model) vs actual premium (Option overpriced/underpriced)
+# detect unusual volume (FLAG: Unusual options activity)
+# option payoff (is it worth staying in the position anymore)
+# more ideas on chatgpt ("thetachart" chat) like AI features...
+# tools similar to tools on unusual whales.
+# trading view style charts and indicators
+# add stock info (open, prev close, dividend, 52 week high/low, total assets, etc..)
+# compare regular avg premiums to current premiums (ex. 1dte itm is 3.50, but today is 4.50.
+                                                            Give "premiums is more expensive than usual alert")

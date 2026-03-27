@@ -1,9 +1,9 @@
 import yfinance as yf
 import pandas as pd
 from datetime import date, datetime
-from src.stock_price_lookup import get_price
-from src.greeks import calc_greeks
-from src.filters import get_nearby_strikes
+from stock_price_lookup import get_price
+from greeks import calc_greeks
+from filters import get_nearby_strikes
 pd.set_option('display.max_columns', None)
 
 

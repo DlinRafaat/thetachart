@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from src.options_lookup import get_options_data
-from src.stock_price_lookup import get_price
+from options_lookup import get_options_data
+from stock_price_lookup import get_price
 
 app = FastAPI()
 

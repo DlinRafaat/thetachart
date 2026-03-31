@@ -1,9 +1,8 @@
 import yfinance as yf
 
-from filters import get_nearby_strikes, filter_volume, open_int, print_options
-from stock_price_lookup import get_price
-from options_lookup import get_options_data
-
+from src.app.core.filters.option_filters import get_nearby_strikes, filter_volume, open_int, print_options
+from src.app.providers.yfinance.stock_provider import get_price
+from src.app.providers.yfinance.options_provider import get_options_data
 
 
 # ask for ticker symbol, expiration date, and calls_or_puts

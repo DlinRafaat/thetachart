@@ -6,8 +6,8 @@ import streamlit as st
 import streamlit.components.v1 as components
 import yfinance as yf
 
-from options_lookup import get_options_data
-from stock_price_lookup import get_price
+from src.app.providers.yfinance.options_provider import get_options_data
+from src.app.providers.yfinance.stock_provider import get_price
 
 
 COLUMN_CONFIG = [

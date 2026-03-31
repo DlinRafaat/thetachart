@@ -1,5 +1,4 @@
 import yfinance as yf
-import streamlit as st
 
 
 def get_price(pick_ticker):

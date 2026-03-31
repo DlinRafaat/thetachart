@@ -2,9 +2,9 @@ import yfinance as yf
 import streamlit as st
 import pandas as pd
 from datetime import date, datetime
-from stock_price_lookup import get_price
-from greeks import calc_greeks
-from filters import get_nearby_strikes
+from src.app.providers.yfinance.stock_provider import get_price
+from src.app.core.calculations.greeks import calc_greeks
+from src.app.core.filters.option_filters import get_nearby_strikes
 pd.set_option('display.max_columns', None)
 
 

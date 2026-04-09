@@ -1,0 +1,1 @@
+# src/app/journal/__init__.py

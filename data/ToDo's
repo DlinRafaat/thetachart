@@ -1,4 +1,4 @@
-# TO DO'S
+TO DO'S
 # calculate option greeks - DONE ✅
 # filter out based on user preference. (ex - user wants to only see strikes with 1000+ volume)
 # filters continued... min volume, min open interest, max bid-ask spread, only calls / only puts,
@@ -18,3 +18,21 @@ only ITM / OTM / ATM, strike range around ATM, min/max IV, expiration filters
 # add stock info (open, prev close, dividend, 52 week high/low, total assets, etc..)
 # compare regular avg premiums to current premiums (ex. 1dte itm is 3.50, but today is 4.50.
                                                             Give "premiums is more expensive than usual alert")
+
+# --- JOURNAL --- #
+Suggested flow for the journaling feature
+
+journal/ backend flow should look like this:
+
+user uploads CSV
+csv_import_service.py reads it with pandas
+broker_column_mapper.py maps columns to ThetaChart standard names
+trade_parser_service.py turns rows into normalized trade objects
+trade_cleaning_service.py fixes formatting/errors
+pnl_service.py calculates metrics
+calendar_service.py groups pnl by day
+UI displays:
+trade table
+stats cards
+PnL calendar
+best/worst trades
